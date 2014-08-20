@@ -18,7 +18,7 @@ In this example, an application has a settings page where preferences can be
 configured.  A user must be logged in before accessing this page.
 
     app.get('/settings',
-      ensureLoggedIn('/login', provider),
+      ensureLoggedIn('/login'),
       function(req, res) {
         res.render('settings', { user: req.user });
       });

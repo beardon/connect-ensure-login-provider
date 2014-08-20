@@ -1,36 +1,39 @@
 {
-    "name": "connect-ensure-login-provider",
-    "version": "0.1.1",
-    "description": "Login session and provider ensuring middleware for Connect.",
-    "keywords": ["connect", "express", "auth", "authn", "authentication", "login", "session", "passport", "provider"],
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:beardon/connect-ensure-login-provider.git"
-    },
-    "bugs": {
-        "url": "http://github.com/beardon/connect-ensure-login-provider/issues"
-    },
-    "author": {
-        "name": "Aaron Bean",
-        "email": "aaron.bean@beardon.com",
-        "url": "https://github.com/aaronbean"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/MIT"
-        }
-    ],
-    "main": "./lib",
-    "dependencies": {
-    },
-    "devDependencies": {
-        "vows": "0.6.x"
-    },
-    "scripts": {
-        "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
-    },
-    "engines": {
-        "node": ">= 0.4.0"
+  "name": "connect-ensure-login-provider",
+  "version": "0.1.2",
+  "description": "Login session and provider ensuring middleware for Connect.",
+  "keywords": ["connect", "express", "auth", "authn", "authentication", "login", "session", "passport", "provider"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/beardon/connect-ensure-login-provider.git"
+  },
+  "bugs": {
+    "url": "http://github.com/beardon/connect-ensure-login-provider/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "contributors": [
+    {
+      "name": "Aaron Bean",
+      "email": "aaron.bean@beardon.com",
+      "url": "https://github.com/aaronbean"
     }
+  ],
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "./lib",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+  },
+  "engines": { "node": ">= 0.4.0" }
 }
