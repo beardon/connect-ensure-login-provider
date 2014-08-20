@@ -1,13 +1,14 @@
-# connect-ensure-login
+# connect-ensure-login-provider
 
-This middleware ensures that a user is logged in.  If a request is received that
+This middleware ensures that a user is logged in and is able to test the
+provider of that authentication.  If a request is received that
 is unauthenticated, the request will be redirected to a login page.  The URL
 will be saved in the session, so the user can be conveniently returned to the
 page that was originally requested.
 
 ## Install
 
-    $ npm install connect-ensure-login
+    $ npm install connect-ensure-login-provider
 
 ## Usage
 
@@ -17,7 +18,7 @@ In this example, an application has a settings page where preferences can be
 configured.  A user must be logged in before accessing this page.
 
     app.get('/settings',
-      ensureLoggedIn('/login'),
+      ensureLoggedIn('/login', provider),
       function(req, res) {
         res.render('settings', { user: req.user });
       });
@@ -62,14 +63,15 @@ what happens:
     $ npm install --dev
     $ make test
 
-[![Build Status](https://secure.travis-ci.org/jaredhanson/connect-ensure-login.png)](http://travis-ci.org/jaredhanson/connect-ensure-login)
+[![Build Status](https://secure.travis-ci.org/beardon/connect-ensure-login-provider.png)](http://travis-ci.org/beardon/connect-ensure-login-provider)
 
 ## Credits
 
   - [Jared Hanson](http://github.com/jaredhanson)
+  - [Aaron Bean](http://github.com/aaronbean)
 
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2012-2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
+Copyright (c) 2012-2013 Beardon Services <[http://beardon.com/](http://beardon.com/)>
